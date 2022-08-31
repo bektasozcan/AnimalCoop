@@ -84,13 +84,9 @@ namespace StudyCase
         private void ResultGenderCount()
         {
             var femaleCount = animallist.Where(f => f.Gender == "Female").ToList().Count;
-            var maleCount = animallist.Where(f => f.Gender == "Male").ToList().Count;
-            var lifeFemaleCount = animallist.Where(f => f.Gender == "Male" && f.DeathTime == 0).ToList().Count;
-            var lifeMaleCount = animallist.Where(f => f.Gender == "Male" && f.DeathTime == 0).ToList().Count;
+            var maleCount = animallist.Where(f => f.Gender == "Male").ToList().Count;       
             Console.WriteLine("Erkek Birey Sayısı:" + maleCount);
-            Console.WriteLine("Dişi Birey Sayısı:" + femaleCount);
-            Console.WriteLine("Yaşayan Dişi Birey Sayısı:" + lifeFemaleCount);
-            Console.WriteLine("Yaşayan Erkek Birey Sayısı:" + lifeMaleCount);
+            Console.WriteLine("Dişi Birey Sayısı:" + femaleCount);   
 
         }
 
